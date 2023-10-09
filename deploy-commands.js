@@ -37,8 +37,7 @@ const rest = new REST({ version: '10' }).setToken(DISCORD_TOKEN);
 		console.log(`Successfully reloaded ${data.length} application (/) commands.`)
 
 		console.log('Commands registred!')
-	}
-	catch (error) {
+	} catch (error) {
 		console.error(error)
 	}
 
