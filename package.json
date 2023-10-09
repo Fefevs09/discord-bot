@@ -5,9 +5,10 @@
   },
   "name": "bot",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "devDependencies": {
-    "eslint": "^8.51.0"
+    "eslint": "^8.51.0",
+    "prettier": "3.0.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
