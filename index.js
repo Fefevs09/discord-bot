@@ -7,7 +7,7 @@ const dotevn = require('dotenv')
 dotevn.config()
 
 // information of .env
-const { DISCORD_TOKEN, CLIENT_ID, GUILD_ID } = process.env
+const { TOKEN, CLIENT_ID, GUILD_ID } = process.env
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] })
@@ -37,7 +37,7 @@ client.once(Events.ClientReady, (c) => {
 	console.log(`Ready! Logged in as ${c.user.tag}`)
 })
 
-client.login(DISCORD_TOKEN)
+client.login(TOKEN)
 
 client.on(Events.InteractionCreate, async (interaction) => {
 	if (!interaction.isChatInputCommand()) return
